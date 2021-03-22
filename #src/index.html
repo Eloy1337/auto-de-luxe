@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	@@include("_head.html", {
+	"title": "Главная",
+	})
+</head>
+
+<body>
+	<div class="wrapper">
+		@@include("_header.html", {})
+		<main class="main">
+			@@include("_features.html", {})
+			@@include("_news.html", {})
+			@@include("_reviews.html", {})
+		</main>
+		@@include("_footer.html", {})
+	</div>
+	<!-- @@include("_popup.html", {}) -->
+	@@include("_js.html", {})
+</body>
+
+</html>

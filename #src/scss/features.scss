@@ -1,0 +1,141 @@
+.features {
+	background-color: $black;
+	width: 100%;
+	position: relative;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: -10%;
+		background-color: $black;
+		width: 100%;
+		min-height: 8rem;
+		border-radius: 0 0 80% 80%;
+	}
+
+	&__img {
+		img {
+			width: 7rem;
+		}
+	}
+
+	&__body {
+	}
+
+	&__slider {
+		width: 100%;
+
+		.slick-slide:active,
+		.slick-slide:focus {
+			outline: none;
+		}
+
+		.slick-dots {
+			text-align: center;
+			display: flex; // поставить кнопки в ряд
+			justify-content: center; // выровнять по центру
+			list-style: none; // убираем черные маркеры
+		}
+
+		.slick-dots button {
+			background: $blue; // цвет фона
+			border: none; // без рамки
+			border-radius: 50%; // радиус закругления
+			height: 12px; // высота точки
+			width: 12px; // ширина точки
+			margin: 5px; // отступы между точками
+			outline: none; // убираем обводку
+
+			&::before {
+				content: ""; // убираем черные маркеры
+			}
+		}
+
+		.slick-dots li[class="slick-active"] button {
+			background: $white;
+		}
+	}
+
+	&__button {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 3.37rem;
+		padding: 0 5rem;
+
+		button {
+			border: 4px solid $blue;
+			border-radius: 30px;
+			background-color: transparent;
+			color: $blue;
+			font-size: 2rem;
+			line-height: 2.18rem;
+			padding: 0.51rem 6rem;
+			font-family: "Roboto";
+			outline: none;
+
+			@media (max-width: $md3 + px) {
+				font-size: 3rem;
+				padding: 1rem 6rem;
+			}
+		}
+
+		span {
+			margin-top: 1rem;
+			font-family: "Montserrat";
+			font-size: 1.2rem;
+			line-height: 1.81rem;
+			text-align: center;
+
+			@media (max-width: $md3 + px) {
+				font-size: 1.5rem;
+				// padding: 1rem 6rem;
+			}
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 72%;
+			height: 2px;
+			background-color: $blue;
+			bottom: -1.125rem;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 3.375rem;
+		padding: 0 7rem;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: "CenturyGothic";
+		padding: 0 3.625rem;
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 2.25rem;
+		line-height: 2.75rem;
+	}
+
+	&__description {
+		margin-top: 1.625rem;
+		font-weight: 400;
+		font-size: 1.75rem;
+		line-height: 2.125rem;
+		text-align: center;
+	}
+}
+
+.container {
+}

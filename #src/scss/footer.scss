@@ -1,0 +1,22 @@
+.footer {
+	background-color: $black;
+	width: 100%;
+	margin-top: 4rem;
+	position: relative;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -10%;
+		background-color: $white;
+		width: 100%;
+		min-height: 8rem;
+		border-radius: 0 0 80% 80%;
+	}
+
+	&__body {
+		width: 100%;
+		min-height: 18rem;
+	}
+}

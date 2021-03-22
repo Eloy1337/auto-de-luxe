@@ -1,0 +1,44 @@
+.reviews {
+	background-color: $white;
+	width: 100%;
+	margin-top: 4rem;
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+	}
+
+	&__list {
+	}
+
+	&__item {
+		justify-content: space-around;
+	}
+
+	&__button {
+		border: 2px solid #629db7;
+		border-radius: 30px;
+		background-color: transparent;
+		color: #629db7;
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+		padding: 0.51rem 3rem;
+		font-family: "Roboto";
+		outline: none;
+		margin-top: 5rem;
+
+		a {
+			color: #629db7;
+			line-height: 1.75rem;
+			text-decoration: none;
+		}
+
+		@media (max-width: $md3 + px) {
+			margin-top: 2rem;
+		}
+	}
+}
